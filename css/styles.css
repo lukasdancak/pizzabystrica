@@ -10876,6 +10876,15 @@ html {
   color: #fff;
 }
 
+.contact-info-box {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.3rem;
+    color: #000000;
+}
+.contact-info-box p {
+    margin: 0.5rem 0;
+}
 .btn-xl {
   padding: 1rem 1.75rem;
   font-size: 1.25rem;
