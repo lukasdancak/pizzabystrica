@@ -10968,32 +10968,23 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: none !important;
+}
+.masthead img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
+  display: none;
 }
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  display: none;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
-}
-
-@media (min-width: 992px) {
-  .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
-  }
-  .masthead .masthead-heading {
-    font-size: 4rem;
-    line-height: 3.5rem;
-  }
-  .masthead .masthead-subheading {
-    font-size: 1.5rem;
-  }
+  display: none;
 }
 .portfolio .portfolio-item {
   cursor: pointer;
