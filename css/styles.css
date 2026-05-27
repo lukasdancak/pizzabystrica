@@ -10968,9 +10968,15 @@ html {
 }
 
 .masthead {
-  padding-top: 0;
+  padding-top: 76px;
   padding-bottom: 0;
   background: none !important;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    padding-top: 104px;
+  }
 }
 .masthead img {
   display: block;
