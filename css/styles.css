@@ -11024,6 +11024,33 @@ html {
   font-size: 1.5rem;
 }
 
+.services-grid {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.service-item {
+    background-color: #fff;
+    border: 2px solid #DB0505;
+    border-radius: 0.75rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000000;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(219, 5, 5, 0.15);
+    border-color: #000000;
+}
+
 .portfolio-modal .btn-close {
   color: #DB0505;
   font-size: 2rem;
