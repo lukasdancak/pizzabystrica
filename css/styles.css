@@ -8,6 +8,52 @@ body {
     line-height: 1.6;
 }
 
+/* Info Row Styles (above banner) - SPECIFIC REQUESTS */
+.info-row {
+    width: 1280px;           /* Requested width */
+    padding: 1rem;           /* Requested padding */
+    margin: 0 auto;          /* Center horizontally */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DB0505; /* red from banner */
+    color: #ffffff;          /* white text */
+}
+
+.info-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-logo {
+    height: 50px;            /* Requested logo height */
+    width: auto;
+}
+
+.info-name {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* Phone and email side-by-side - REQUESTED */
+.info-right {
+    display: flex;
+    gap: 20px;               /* Space between phone and email */
+    font-size: 10px;         /* Requested text size */
+}
+
+.info-right p {
+    margin: 0;               /* Remove default margin */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.info-right strong {
+    color: #ffffff;
+}
+
 /* Banner Styles */
 .banner {
     width: 100%;
@@ -18,45 +64,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-}
-
-/* Header Styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #DB0505; /* red from banner */
-    color: #ffffff; /* white text for contrast */
-    border-bottom: 3px solid #000000; /* black accent */
-    flex-wrap: wrap;
-}
-
-.logo-container {
-    flex: 1;
-    min-width: 150px;
-    text-align: center;
-}
-
-.logo {
-    max-width: 150px;
-    height: auto;
-}
-
-.contact-info {
-    flex: 1;
-    min-width: 200px;
-    text-align: right;
-    font-size: 1.1em;
-}
-
-.contact-info p {
-    margin: 5px 0;
-    font-weight: bold;
-}
-
-.contact-info strong {
-    color: #ffffff;
 }
 
 /* Container Styles */
@@ -118,20 +125,39 @@ footer {
     border-top: 3px solid #DB0505; /* red accent */
 }
 
-/* Responsive Design */
+/* Responsive Design - ADJUSTED FOR FIXED WIDTH INFO ROW */
+@media (max-width: 1300px) {
+    .info-row {
+        width: 90%;          /* Reduce width on smaller screens */
+        padding: 0.5rem;
+    }
+    
+    .info-name {
+        font-size: 1.2em;
+    }
+    
+    .info-right {
+        font-size: 9px;
+        gap: 10px;
+    }
+}
+
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+    .info-row {
+        width: 95%;
+        padding: 0.5rem;
+        flex-wrap: wrap;
+        gap: 15px;
     }
     
-    .logo-container {
-        text-align: left;
+    .info-left,
+    .info-right {
+        width: 100%;
+        justify-content: center;
     }
     
-    .contact-info {
-        text-align: left;
-        margin-top: 15px;
+    .info-right {
+        margin-top: 10px;
     }
     
     h1 {
@@ -153,8 +179,13 @@ footer {
         font-size: 1em;
     }
     
-    .contact-info p {
-        font-size: 0.9em;
+    .info-name {
+        font-size: 1em;
+    }
+    
+    .info-right {
+        font-size: 8px;
+        gap: 5px;
     }
     
     .coming-soon {
