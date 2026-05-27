@@ -1,6 +1,6 @@
 /* Base Styles - Using colors from banner: #DB0505 (red), #000000 (black), #D7BEA2 (beige) */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Intern', sans-serif; /* Changed to Intern as requested */
     margin: 0;
     padding: 0;
     background-color: #D7BEA2; /* beige background */
@@ -34,6 +34,7 @@ body {
 .info-name {
     font-size: 1.4em;
     font-weight: bold;
+    font-family: 'Playfair Display', serif; /* Playfair Display for logo text */
 }
 
 /* Phone and email side-by-side - REQUESTED */
@@ -84,6 +85,14 @@ h1 {
     margin-bottom: 30px;
     font-size: 2.5em;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-family: 'Playfair Display', serif; /* Playfair Display for headings */
+    font-weight: 700;
+}
+
+/* Also apply Playfair Display to other headings */
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
 }
 
 p {
@@ -91,6 +100,7 @@ p {
     margin-bottom: 20px;
     text-align: center;
     color: #000000;
+    font-family: 'Intern', sans-serif; /* Intern for body text */
 }
 
 /* Coming Soon Styles */
@@ -106,12 +116,14 @@ p {
     color: #DB0505; /* red */
     margin-top: 0;
     text-align: center;
+    font-family: 'Playfair Display', serif;
 }
 
 .coming-soon p {
     text-align: center;
     font-size: 1.1em;
     color: #000000;
+    font-family: 'Intern', sans-serif;
 }
 
 /* Footer Styles */
@@ -123,6 +135,12 @@ footer {
     font-size: 0.9em;
     margin-top: 40px;
     border-top: 3px solid #DB0505; /* red accent */
+    font-family: 'Intern', sans-serif;
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
 }
 
 /* Responsive Design - ADJUSTED FOR FIXED WIDTH INFO ROW */
@@ -139,6 +157,18 @@ footer {
     .info-right {
         font-size: 9px;
         gap: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1.1em;
     }
 }
 
@@ -164,6 +194,14 @@ footer {
         font-size: 2em;
     }
     
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1.1em;
+    }
+    
     .container {
         padding: 0 10px;
         margin: 20px auto;
@@ -173,6 +211,10 @@ footer {
 @media (max-width: 480px) {
     h1 {
         font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
     }
     
     p {
