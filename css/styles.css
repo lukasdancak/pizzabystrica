@@ -11077,3 +11077,56 @@ html {
 .copyright {
   background-color: #000000;
 }
+
+.dailymenu-grid {
+  margin-top: 2rem;
+}
+
+.daily-menu-card {
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  height: 100%;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.daily-menu-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  border-color: #DB0505;
+}
+
+.daily-menu-day {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #DB0505;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #DB0505;
+}
+
+.daily-menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.daily-menu-items li {
+  padding: 0.4rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ccc;
+  border-bottom: 1px dotted #333;
+}
+
+.daily-menu-items li:last-child {
+  border-bottom: none;
+}
+
+.meal-label {
+  color: #fff;
+  font-weight: 600;
+}
