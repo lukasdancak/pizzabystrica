@@ -11107,7 +11107,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
@@ -11115,6 +11114,8 @@ html {
   font-weight: 600;
   font-size: 1.05rem;
   color: #fff;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .menu-item-price {
@@ -11122,11 +11123,39 @@ html {
   font-size: 1rem;
   color: #DB0505;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .menu-item-ingredients {
   margin: 0.25rem 0 0;
   font-size: 0.9rem;
   color: rgba(255,255,255,0.7);
+  line-height: 1.5;
+}
+
+.menu-info-panel {
+  margin-top: 0.8rem;
+  padding: 0.6rem 0.8rem;
+  background: rgba(255,255,255,0.08);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+}
+
+.menu-info-panel strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.menu-promo-banner {
+  margin-bottom: 1rem;
+  padding: 0.7rem 1rem;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a2e;
   line-height: 1.5;
 }
